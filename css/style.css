@@ -9,7 +9,6 @@
   --gray-card: #4a4a4a;
   --input-gray: #cfcfcf;
   --white: #ffffff;
-
   --font-display: 'Anton', 'Oswald', sans-serif;
   --font-condensed: 'Oswald', sans-serif;
   --font-body: 'Montserrat', sans-serif;
@@ -48,9 +47,9 @@ a {
   margin: 0 auto;
 }
 
-/* Title fonts*/
+/* title fonts*/
 .section-title-center {
-  font-family: 'Metropolitan', sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: clamp(2rem, 4vw, 3.2rem);
   font-weight: 700;
   text-align: center;
@@ -60,6 +59,7 @@ a {
 }
 
 .section-title-left {
+  background-color: linear-gradient(90deg, #065B12 47.87%, #0DC126 70.83%);
   font-family: var(--font-condensed);
   font-size: clamp(2rem, 3.5vw, 2.8rem);
   font-weight: 700;
@@ -86,7 +86,15 @@ a {
 }
 
 .text-green {
-  color: var(--green-main);
+  background: linear-gradient(90deg, #065B12 59.11%, #0DC126 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: Oswald;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
 }
 
 /* Botones estilo Figma (Página 3 & 4) */
@@ -117,10 +125,8 @@ a {
 }
 
 .btn-outline {
-  background: rgba(0, 0, 0, 0.35);
-  border-color: var(--green-main);
-  color: var(--white);
-  backdrop-filter: blur(4px);
+  border-radius: 15px;
+  border: 2px solid #358840;
 }
 
 .btn-outline:hover {
@@ -131,7 +137,10 @@ a {
 .hero {
   position: relative;
   min-height: 92vh;
-  background: url('assets/hero-bg.jpg') center/cover no-repeat;
+  background: url('assets/hero-bg.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -150,22 +159,26 @@ a {
 }
 
 /* Navbar */
-.navbar {
+.navbar_container {
+  width: 100%;
   position: relative;
   z-index: 20;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 1.4rem 0;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.00) 0%, #383838 127.92%);
 }
 
 .brand-logo img {
-  height: 54px;
-  width: auto;
+  padding: 0px 30px;
+  height: 80px;
+  width: 150px;
 }
 
 .nav-links {
   display: flex;
+  padding: 0px 30px 0px 20px;
   list-style: none;
   gap: 2.2rem;
 }
@@ -198,7 +211,7 @@ a {
   border-radius: 2px;
 }
 
-/* Bicicleta en "Ignorar Auto Layout" */
+/* hero ignore */
 .hero-rider-ignore-layout {
   position: absolute;
   bottom: -2%;
@@ -211,18 +224,26 @@ a {
 }
 
 /* Contenido Hero */
-.hero-content {
+.hero-content_container {
+  width: fit-content;
+  /* background-color: darkblue; */
   position: relative;
   z-index: 10;
   padding-bottom: 5rem;
   margin-top: auto;
+  padding: 70px 10px 200px 70px;
+  
 }
+
 
 .hero-text-box {
   max-width: 580px;
 }
 
 .hero-title {
+  display: flex;
+  flex-direction: column;
+  align-items: top ;
   font-family: var(--font-display);
   font-size: clamp(3.5rem, 7.5vw, 6.2rem);
   line-height: 0.92;
@@ -238,12 +259,10 @@ a {
 .text-green-brush {
   font-family: 'Metropolitan', sans-serif;
   color: #00d627;
-  background: linear-gradient(
-    70deg, 
-    #00d627 0%, 
-    #00d627 78%, 
-    rgba(0, 214, 39, 0.25) 100%
-  );
+  background: linear-gradient(180deg,#00FF24 0%,#65b36f 75.96%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -260,8 +279,9 @@ a {
 }
 
 .hero-subtitle {
-  font-size: clamp(0.95rem, 1.5vw, 1.15rem);
+  font-size: 20px;
   font-weight: 500;
+  margin-top: 50px;
   margin-bottom: 1.6rem;
   text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
 }
@@ -275,7 +295,10 @@ a {
 /* about */
 .about-section {
   padding: 5.5rem 0;
-  background: linear-gradient(180deg, var(--bg-cream) 0%, #eae4cf 100%);
+  background: url(../img/about-section.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .about-grid {
@@ -383,11 +406,9 @@ a {
 
 .about-text h2 span {
   font-family: 'Metropolitan', sans-serif;
-  background: linear-gradient(
-    70deg, 
-    #00d627 0%, 
-    #00d627 78%, 
-    rgba(0, 214, 39, 0.25) 100%
+  background: linear-gradient(90deg,
+    #277b32 47.87%,
+    #0DC126 70.83%
   );
   -webkit-background-clip: text;
   background-clip: text;
@@ -396,7 +417,6 @@ a {
   line-height: 1.2;
   padding-top: 0.15em;
   text-shadow: none;
-  filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.6));
 }
 
 .about-text p {
@@ -405,12 +425,13 @@ a {
   margin-bottom: 1rem;
 }
 
-/* =========================================================
-   PÁGINA 6: PONÉTE A PRUEBA (Collage escalonado proporcional)
-========================================================= */
+/* separator / */
 .challenge-section {
   padding: 5rem 0 7rem;
-  background: url('assets/bg-montana-suave.jpg') bottom center/cover no-repeat;
+  background: url(../img/imgs-escalera.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .challenge-collage {
@@ -467,12 +488,13 @@ a {
   display: block;
 }
 
-/* =========================================================
-   PÁGINA 7-9: RUTAS Y ETAPAS
-========================================================= */
+/* route & stages */
 .route-section {
-  padding: 5rem 0;
-  background-color: var(--bg-cream);
+  padding: 5rem 0px;
+  background: url(../img/ciudades.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .route-tabs {
@@ -532,19 +554,33 @@ a {
   margin-bottom: 0.35rem;
 }
 
-.route-media img {
-  width: 100%;
-  height: 400px;
-  object-fit: cover;
-  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.2);
+.route-media {
+  width: fit-content;
+  height: fit-content;
 }
 
-/* =========================================================
-   PÁGINA 10: GALERÍA
-========================================================= */
+.route-media img {
+  width: 1000px;
+  height: 500px;
+}
+
+/* gallery */
 .gallery-section {
   padding: 5rem 0 7rem;
-  background: url('assets/bg-flores-rocas.jpg') bottom center/cover no-repeat;
+  background: url(../img/gallery.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+/* gallery title */
+.gallery-section .section-title-center {
+  font-family: 'Metropolitan', sans-serif;
+  background: linear-gradient(90deg, #065B12 0%, #0DC126 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .gallery-grid {
@@ -569,16 +605,21 @@ a {
   transition: transform 0.35s ease;
 }
 
+.gallery-item video {
+  width: 380px;
+  height: 215px;
+}
+
 .gallery-item:hover img {
   transform: scale(1.06);
 }
 
-/* =========================================================
-   PÁGINA 11: EXPERIENCIA / NUESTRAS MEJORES OPCIONES
-========================================================= */
+/* experience */
 .experience-section {
-  padding: 5rem 0;
-  background-color: var(--bg-cream);
+  background: url(../img/experience.png);
+  background-size: 1920px 1920px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .places-grid {
@@ -589,7 +630,7 @@ a {
 
 .place-card {
   position: relative;
-  height: 310px;
+  height: 400px;
   border-radius: 14px;
   background-size: cover;
   background-position: center;
@@ -632,9 +673,7 @@ a {
   color: #dcdcdc;
 }
 
-/* =========================================================
-   PÁGINA 12: ARTISTAS INVITADOS & FAN ZONE
-========================================================= */
+/* fanzone section */
 .fanzone-section {
   padding: 5rem 0;
   text-align: center;
@@ -644,6 +683,7 @@ a {
   margin-top: 4.5rem;
 }
 
+/* artist logos */
 .artists-logos {
   display: flex;
   justify-content: center;
@@ -652,12 +692,14 @@ a {
   flex-wrap: wrap;
 }
 
+/* artists logo settings */
 .artists-logos img {
   max-height: 110px;
   width: auto;
   object-fit: contain;
 }
 
+/* brand logos */
 .brands-logos {
   display: flex;
   justify-content: center;
@@ -666,6 +708,7 @@ a {
   flex-wrap: wrap;
 }
 
+/* brand logo settings */
 .brands-logos img {
   max-height: 85px;
   width: auto;
@@ -693,19 +736,21 @@ a {
 
 /* events */
 .events-section {
+  background: url(../img/events.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   padding: 5rem 0;
 }
 
 .event-poster {
-  max-width: 680px;
+  max-width: 450px;
   margin: 0 auto;
   border-radius: 16px;
-  padding: 2.8rem 2.2rem;
   color: var(--white);
-  background: linear-gradient(160deg, rgba(16, 42, 22, 0.88), rgba(5, 18, 9, 0.95)),
-    url('assets/poster-bg.jpg') center/cover no-repeat;
-  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.35);
   text-align: center;
+  background: url(<path-to-image>)/ cover no-repeat;
+  box-shadow:  5px 5px 6px rgba(0, 0, 0, 0.25);
 }
 
 .poster-logo {
@@ -816,11 +861,23 @@ a {
 /* faq (questions) */
 .faq-section {
   padding: 5rem 0;
-  background: url('assets/bg-hojas-tropicales.png') bottom center/cover no-repeat;
+  background: url(../img/faq.png);
+  background-size: cover;
+  background-position: center;
+  background-size: cover;
 }
 
 .faq-container {
   max-width: 820px;
+}
+
+/* faq title */
+.faq-container .section-title-center {
+  font-family: 'Metropolitan', sans-serif;
+  background: linear-gradient(180deg, #065B12 8.96%, #0DC126 58.49%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .faq-list {
@@ -889,11 +946,23 @@ a {
 /* form */
 .register-section {
   padding: 5rem 0 6rem;
-  background: url('assets/bg-hojas-suave.png') center/cover no-repeat;
+  background: url(../img/faq.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .register-container {
   max-width: 820px;
+}
+
+/* form title */
+.register-container .section-title-center {
+  font-family: 'Metropolitan', sans-serif;
+  background: linear-gradient(90deg, #065B12 0%, #0DC126 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .form-grid {
@@ -1149,7 +1218,7 @@ a {
     transform: translateX(75px) scale(0.9);
   }
 
-  /* Collage Mobile: mantiene exactamente la misma proporción con sombras más sutiles */
+  /* Collage Mobile  */
   .challenge-section {
     padding: 3.5rem 0 4.5rem;
   }
