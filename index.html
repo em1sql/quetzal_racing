@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quetzal Racing | Donde la ruta hace tus sueños realidad</title>
+  <!-- googlefonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@400;500;600;700;800&family=Oswald:wght@500;700&display=swap"
+    rel="stylesheet"/>
+    <link href="https://fonts.cdnfonts.com/css/metropolitan" rel="stylesheet">
+  <!-- css link -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+      <!-- navbar (nav) -->
+  <header id="inicio" class="hero">
+    <div class="hero-overlay"></div>
+
+    <!-- Navegación -->
+    <nav class="navbar container">
+      <a href="#inicio" class="brand-logo" aria-label="Quetzal Racing Inicio">
+        <img src="img/logoquetzalracing_white.png" alt="Logo Quetzal Racing" />
+      </a>
+
+      <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-links">
+        <li><a href="#inicio">INICIO</a></li>
+        <li><a href="#sobre-nosotros">SOBRE NOSOTROS</a></li>
+        <li><a href="#la-ruta">LA RUTA</a></li>
+        <li><a href="#galeria">GALERIA</a></li>
+        <li><a href="#eventos">EVENTOS</a></li>
+        <li><a href="#experiencia">EXPERIENCIA</a></li>
+      </ul>
+    </nav>
+
+    <!-- hero content-->
+    <div class="hero-content container">
+      <div class="hero-text-box">
+        <h1 class="hero-title">
+          <span class="text-green-brush">QUETZAL</span>
+          <span class="text-white-brush">RACING</span>
+        </h1>
+        <p class="hero-subtitle">“Donde la ruta hace tus sueños realidad”</p>
+
+        <div class="hero-buttons">
+          <a href="#sobre-nosotros" class="btn btn-primary">DESCUBRE MÁS</a>
+          <a href="#eventos" class="btn btn-outline">DESCARGAR CRONOGRAMA</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+      <!-- carrousel -->
+    <section id="sobre-nosotros" class="about-section">
+      <div class="container about-grid">
+        <!-- Carrousel 3D-->
+        <div class="about-carousel">
+          <button class="carousel-btn prev" id="prevSlide" aria-label="Anterior">&#8592;</button>
+
+          <div class="carousel-track">
+            <div class="carousel-card side-left">
+              <img src="img/img2card.jpg" alt="Ciclista en sendero" />
+            </div>
+            <div class="carousel-card active">
+              <img src="img/mainimgcard.jpg" alt="Descenso técnico Zona de los Santos" />
+            </div>
+            <div class="carousel-card side-right">
+              <img src="img/img3card.jpg" alt="Ruta de montaña" />
+            </div>
+          </div>
+
+          <button class="carousel-btn next" id="nextSlide" aria-label="Siguiente">&#8594;</button>
+        </div>
+
+        <!-- Text Nuestra Esencia -->
+        <div class="about-text">
+          <span class="eyebrow">NUESTRA ESCENCIA</span>
+          <h2 class="section-title-left">UN POCO DE <span>QUETZAL RACING</span></h2>
+          <p>
+            Nacida en el corazón de las montañas de la Zona de los Santos, Quetzal Racing surgió en 2018 como una iniciativa de un grupo de ciclistas locales apasionados por los senderos de cafetales, bosques nubosos y ascensos exigentes de Santa María de Dota, Tarrazú y León Cortés.
+          </p>
+          <p>
+            Inspirada en el resplandor y la libertad del quetzal que habita estas alturas, la organización comenzó con pequeñas rodadas comunitarias que rápidamente evolucionaron hasta convertirse en el desafío de ciclismo de montaña más emblemático de la región.
+          </p>
+          <p>
+            Hoy, Quetzal Racing no solo busca poner a prueba la resistencia física y técnica de cada corredor frente al terreno quebrado de los cerros costarricenses, sino también promover el turismo sostenible, la conservación ambiental y el orgullo por la cultura cafetalera local.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- separador -->
+    <section class="challenge-section">
+      <div class="container">
+        <h2 class="section-title-center">
+          PONÉTE A <span class="text-green">PRUEBA</span>
+        </h2>
+        <div class="challenge-collage">
+          <figure class="collage-img top-left">
+            <img src="img/img1.jpg" alt="Ciclista concentrado en ascenso" />
+          </figure>
+
+          <div class="collage-video center-box">
+            <video controls poster="img/stairs-vid.mp4">
+              <source src="img/stairs-vid.mp4" type="video/mp4" />
+              Tu navegador no soporta la reproducción de video.
+            </video>
+          </div>
+
+          <figure class="collage-img bottom-right">
+            <img src="img/img2.jpg" alt="Ciclista con jersey naranja en montaña" />
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- route -->
+    <section id="la-ruta" class="route-section">
+      <div class="container">
+        <!-- stages selector -->
+        <div class="route-tabs" role="tablist">
+          <button class="route-tab active" data-stage="0" role="tab" aria-selected="true">
+            PEREZ ZELEDON
+          </button>
+          <button class="route-tab" data-stage="1" role="tab" aria-selected="false">
+            DOTA
+          </button>
+          <button class="route-tab" data-stage="2" role="tab" aria-selected="false">
+            TARRAZU
+          </button>
+        </div>
+
+        <!-- stage dynamism -->
+        <div class="route-content-grid">
+          <div class="route-info">
+            <h2 id="stage-title" class="stage-title">ETAPA 1: El Juicio</h2>
+            <p id="stage-desc" class="stage-desc">
+              Es el valle dorado custodiado por la sombra imponente del Cerro Chirripó, la tierra donde nacen las leyendas y se forjan los verdaderos titanes del ciclismo. Partiendo desde el calor vibrante del Valle de El General, los ciclistas deberán abrirse paso hacia las faldas del coloso, enfrentando un terreno indomable de ríos caudalosos, piedras sueltas y ascensos interminables donde el clima cambia del fuego al hielo en cuestión de kilómetros. Cruzar este valle hacia las alturas es enfrentar el juicio final de la montaña, el escenario definitivo donde solo los más fuertes logran tocar el cielo.
+            </p>
+
+            <ul class="stage-specs">
+              <li><strong>Distancia:</strong> <span id="stage-distance">105 km (Desnivel positivo: +3,850 m)</span></li>
+              <li><strong>Lugar de salida:</strong> <span id="stage-start">San Gerardo de Rivas (Base del Chirripó)</span></li>
+              <li><strong>Lugar de llegada:</strong> <span id="stage-end">Parque Central de San Isidro de El General</span></li>
+              <li><strong>HORA:</strong> <span id="stage-time">5:00 AM</span></li>
+            </ul>
+
+            <a href="#" id="stage-gpx" class="btn btn-primary">DESCARGAR RUTA</a>
+          </div>
+
+          <div class="route-media">
+            <img
+              id="stage-img"
+              src="img/bike1.png"
+              alt="Ciclista en Etapa 1 Pérez Zeledón"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+      <!-- gallery -->
+    <section id="galeria" class="gallery-section">
+      <div class="container">
+        <h2 class="section-title-center">GALERIA</h2>
+
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img src="assets/galeria-1.jpg" alt="Competidor Cannondale" />
+          </div>
+          <div class="gallery-item">
+            <img src="assets/galeria-2.jpg" alt="Descenso técnico MTB" />
+          </div>
+          <div class="gallery-item">
+            <img src="assets/galeria-3.jpg" alt="Pelotón en montaña" />
+          </div>
+          <div class="gallery-item">
+            <img src="assets/galeria-4.jpg" alt="Cruce de río dorsales 330 y 125" />
+          </div>
+          <div class="gallery-item">
+            <img src="assets/galeria-5.jpg" alt="Sendero entre cafetales" />
+          </div>
+          <div class="gallery-item">
+            <img src="assets/galeria-6.jpg" alt="Cruce de quebrada en bosque" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+      <!-- experience -->
+    <section id="experiencia" class="experience-section">
+      <div class="container">
+        <header class="section-header-center">
+          <h2 class="section-title-center">NUESTRAS MEJORES OPCIONES</h2>
+          <p class="section-subtitle">PERFECTAS PARA TI</p>
+        </header>
+        <div class="places-grid">
+
+
+          <!-- Card 1 -->
+          <article class="place-card" style="background-image: url('assets/bokato.jpg');">
+            <div class="place-overlay">
+              <h3>BOKATO</h3>
+              <p class="place-desc">La mejor opción para tomar un buen café.</p>
+              <span class="place-loc">Se ubica en: San Marcos, Tarrazú y Santa María, Dota</span>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="place-card" style="background-image: url('assets/palenque.jpg');">
+            <div class="place-overlay">
+              <h3>HOTEL PALENQUE TARRAZÚ</h3>
+              <p class="place-desc">Los mejores paisajes y ambientes para pasar el rato.</p>
+              <span class="place-loc">Se ubica en: San Marcos, Tarrazú</span>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="place-card" style="background-image: url('assets/kasa-blanca.jpg');">
+            <div class="place-overlay">
+              <h3>RESTAURANTE KASA BLANCA</h3>
+              <p class="place-desc">Disfruta de una experiencia inolvidable.</p>
+              <span class="place-loc">Se ubica en: El Bajo, Tarrazú</span>
+            </div>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="place-card" style="background-image: url('assets/dinopark.jpg');">
+            <div class="place-overlay">
+              <h3>DINOPARK</h3>
+              <p class="place-desc">Prepárate para momentos llenos de diversión.</p>
+              <span class="place-loc">Se ubica en: La Sabana, Tarrazú</span>
+            </div>
+          </article>
+
+          <!-- Card 5 -->
+          <article class="place-card" style="background-image: url('assets/el-coyote.jpg');">
+            <div class="place-overlay">
+              <h3>CABAÑAS EL COYOTE</h3>
+              <p class="place-desc">Comodidad y todo lo que necesitas para pasarla bien.</p>
+              <span class="place-loc">Se ubica en: San Pablo, León Cortés</span>
+            </div>
+          </article>
+
+          <!-- Card 6 -->
+          <article class="place-card" style="background-image: url('assets/emilius-pizza.jpg');">
+            <div class="place-overlay">
+              <h3>EMILIUS PIZZA</h3>
+              <p class="place-desc">La mejor pizza de la zona.</p>
+              <span class="place-loc">Se ubica en: Santa Cecilia, San Marcos, Tarrazú</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+      <!-- artists n' fan zone for da fellas -->
+    <section class="fanzone-section">
+      <div class="container">
+        <h2 class="section-title-center">ARTISTAS INVITADOS</h2>
+        <div class="artists-logos">
+          <img src="assets/logo-ajenos.png" alt="Los Ajenos" />
+          <img src="assets/logo-malpais.png" alt="Malpaís" />
+        </div>
+
+        <!-- brands fan zone -->
+        <h2 class="section-title-center mt-large">MARCAS EN NUESTRA FAN ZONE</h2>
+        <div class="brands-logos">
+          <img src="assets/logo-trek.png" alt="Trek" />
+          <img src="assets/logo-santo-remedio.png" alt="Santo Remedio" />
+          <img src="assets/logo-fox.png" alt="Fox Racing" />
+          <img src="assets/logo-perform.png" alt="Perform" />
+          <img src="assets/logo-gatorade.png" alt="Gatorade" />
+        </div>
+      </div>
+    </section>
+
+      <!-- jersey -->
+    <section class="jersey-section">
+      <div class="container jersey-wrapper">
+        <h2 class="section-title-center">NUESTRO JERSEY</h2>
+        <div class="jersey-showcase">
+          <img src="assets/jersey-quetzal.png" alt="Jersey Oficial Quetzal Racing" />
+        </div>
+      </div>
+    </section>
+
+      <!-- events -->
+    <section id="eventos" class="events-section">
+      <div class="container">
+        <h2 class="section-title-center">PRÓXIMOS EVENTOS</h2>
+
+        <div class="event-poster">
+          <div class="poster-top">
+            <img src="assets/logo-quetzal-blanco.png" alt="Quetzal Racing" class="poster-logo" />
+            <p class="poster-motto">“Donde la ruta hace tus sueños realidad”</p>
+          </div>
+
+          <!-- poster -->
+          <div class="poster-main">
+            <span class="poster-tag">EDICIÓN</span>
+            <h3 class="poster-location">LOS SANTOS</h3>
+            <p class="poster-date">19-21 DE NOVIEMBRE</p>
+
+            <div class="poster-details-row">
+              <div class="poster-time">5<span>AM</span></div>
+              <div class="poster-route">
+                <strong>VALLE DE EL GENERAL, PEREZ ZELEDON</strong>
+                <span>RUMBO A LA ZONA DE LOS SANTOS</span>
+              </div>
+            </div>
+
+            <div class="poster-categories">
+              <p><strong>CATEGORIAS:</strong> ELITE, MASTER, OPEN</p>
+              <p><strong>MODALIDADES:</strong> XC / ENDURO</p>
+            </div>
+          </div>
+
+          <div class="poster-footer">
+            <div class="poster-price">$430</div>
+            <div class="poster-cta-info">
+              <span class="badge-open">INSCRIPCIONES ABIERTAS / INCLUYE KIT COMPLETO</span>
+              <p>Kit, medalla, póliza, e hidratación.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+      <!-- faq -->
+    <section class="faq-section">
+      <div class="container faq-container">
+        <h2 class="section-title-center">FAQ</h2>
+
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>¿Hasta cuándo tengo tiempo para inscribirme?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Las inscripciones estarán abiertas hasta el 10 de noviembre o hasta agotar los cupos disponibles por categoría.</p>
+            </div>
+          </div>
+
+          <!-- faq question -->
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>¿Qué incluye el costo de mi inscripción?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Incluye el jersey oficial Quetzal Racing, número de competidor con chip de cronometraje, medalla finisher, póliza de seguro, asistencia mecánica básica y puestos de hidratación en ruta.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>¿Qué tipo de bicicleta está permitida?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Se permiten bicicletas de montaña (MTB) rígidas o de doble suspensión en buen estado mecánico, con frenos de disco operativos.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>¿Se permiten bicicletas eléctricas (E-Bikes)?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Sí, contamos con una categoría recreativa especial para E-Bikes de pedaleo asistido.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>¿Cuándo y dónde se entregan los kits de corredor?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>La entrega de kits se realizará el 18 de noviembre de 10:00 AM a 7:00 PM en la Fan Zone oficial en San Isidro de El General.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>¿Dónde puedo descargar la ruta o el archivo GPX?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Puedes descargar cada archivo GPX directamente en la sección "La Ruta" de esta página seleccionando la etapa correspondiente.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>¿Habrá estacionamiento y guardarropa en la zona de salida?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Sí, habilitaremos zonas de parqueo vigilado y servicio de guardarropa gratuito para los corredores inscritos desde las 4:00 AM.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+      <!-- form -->
+    <section id="inscripcion" class="register-section">
+      <div class="container register-container">
+        <header class="section-header-center">
+          <h2 class="section-title-center">¿QUERES INSCRIBIRTE?</h2>
+          <p class="section-subtitle">¡LLENA ESTE FORMULARIO!</p>
+        </header>
+
+        <form class="register-form" action="#" method="POST" enctype="multipart/form-data">
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="nombre">Nombre</label>
+              <input type="text" id="nombre" name="nombre" required />
+            </div>
+
+            <div class="form-group">
+              <label for="apellido">Apellido</label>
+              <input type="text" id="apellido" name="apellido" required />
+            </div>
+
+            <div class="form-group">
+              <label for="telefono">Número telefónico</label>
+              <input type="tel" id="telefono" name="telefono" required />
+            </div>
+
+            <div class="form-group">
+              <label for="correo">Correo electrónico</label>
+              <input type="email" id="correo" name="correo" required />
+            </div>
+
+            <div class="form-group">
+              <label for="modalidad">Modalidad</label>
+              <select id="modalidad" name="modalidad" required>
+                <option value="" disabled selected>Selecciona una modalidad</option>
+                <option value="xc">XC (Cross Country)</option>
+                <option value="enduro">Enduro</option>
+                <option value="ebike">E-Bike</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="talla">Talla</label>
+              <select id="talla" name="talla" required>
+                <option value="" disabled selected>Selecciona tu talla de jersey</option>
+                <option value="XS">XS</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group-center">
+            <label for="comprobante">Comprobante pago</label>
+            <div class="file-input-wrapper">
+              <input type="file" id="comprobante" name="comprobante" accept="image/*,.pdf" required />
+              <span class="sinpe-placeholder">SINPE: 8987-0653</span>
+            </div>
+          </div>
+
+          <div class="form-submit">
+            <button type="submit" class="btn btn-primary btn-submit">INSCRIBIRSE</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+      <!-- footer -->
+  <footer class="site-footer">
+    <div class="container footer-top">
+      <!-- Logo -->
+      <div class="footer-brand">
+        <a href="#inicio" aria-label="Quetzal Racing Inicio">
+          <img src="assets/logo-quetzal-blanco.png" alt="Logo Quetzal Racing" />
+        </a>
+      </div>
+
+      <!-- nav footer -->
+      <nav class="footer-nav" aria-label="Navegación del pie de página">
+        <ul class="footer-col">
+          <li><a href="#inicio">INICIO</a></li>
+          <li><a href="#la-ruta">LA RUTA</a></li>
+          <li><a href="#eventos">EVENTOS</a></li>
+        </ul>
+        <ul class="footer-col">
+          <li><a href="#sobre-nosotros">SOBRE NOSOTROS</a></li>
+          <li><a href="#galeria">GALERIA</a></li>
+          <li><a href="#experiencia">EXPERIENCIA</a></li>
+        </ul>
+      </nav>
+
+      <!-- map-->
+      <div class="footer-map">
+        <iframe
+          title="Ubicación Quetzal Racing - Zona de los Santos"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15730.635836778077!2d-84.0289!3d9.6589!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa11033b41b8e2f%3A0x6a0a0d5c89e4b9d!2sSan%20Marcos%20de%20Tarraz%C3%BA%2C%20San%20Jos%C3%A9!5e0!3m2!1ses!2scr!4v1700000000000!5m2!1ses!2scr"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </div>
+
+    <!-- footer bottom -->
+    <div class="footer-bottom">
+      <div class="container">
+        <p>© 2026 Quetzal Racing. Creado por Emily Calvo Godínez. Imágenes de Freepik, LaRutaMTB, Pinterest, Pexels.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- script link (js) -->
+  <script src="script.js"></script>
+</body>
+</html>
