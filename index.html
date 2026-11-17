@@ -4,6 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Quetzal Racing | Donde la ruta hace tus sueños realidad</title>
+
+  <!-- font awesome icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   <!-- googlefonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,7 +17,7 @@
     rel="stylesheet"/>
     <link href="https://fonts.cdnfonts.com/css/metropolitan" rel="stylesheet">
   <!-- css link -->
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
 
@@ -21,7 +26,7 @@
     <div class="hero-overlay"></div>
 
     <!-- Navegación -->
-    <nav class="navbar container">
+    <nav class="navbar_container">
       <a href="#inicio" class="brand-logo" aria-label="Quetzal Racing Inicio">
         <img src="img/logoquetzalracing_white.png" alt="Logo Quetzal Racing" />
       </a>
@@ -43,7 +48,7 @@
     </nav>
 
     <!-- hero content-->
-    <div class="hero-content container">
+    <div class="hero-content_container">
       <div class="hero-text-box">
         <h1 class="hero-title">
           <span class="text-green-brush">QUETZAL</span>
@@ -65,7 +70,7 @@
       <div class="container about-grid">
         <!-- Carrousel 3D-->
         <div class="about-carousel">
-          <button class="carousel-btn prev" id="prevSlide" aria-label="Anterior">&#8592;</button>
+          <button class="carousel-btn prev" id="prevSlide" aria-label="Anterior"><i class="fa-solid fa-arrow-left-long"></i></button>
 
           <div class="carousel-track">
             <div class="carousel-card side-left">
@@ -79,13 +84,13 @@
             </div>
           </div>
 
-          <button class="carousel-btn next" id="nextSlide" aria-label="Siguiente">&#8594;</button>
+          <button class="carousel-btn next" id="nextSlide" aria-label="Siguiente"><i class="fa-solid fa-arrow-right"></i></button>
         </div>
 
-        <!-- Text Nuestra Esencia -->
+        <!-- Text "Nuestra Esencia"" -->
         <div class="about-text">
           <span class="eyebrow">NUESTRA ESCENCIA</span>
-          <h2 class="section-title-left">UN POCO DE <span>QUETZAL RACING</span></h2>
+          <h2 class="section-title-left">UN POCO DE <span>QUETZAL</span> RACING</h2>
           <p>
             Nacida en el corazón de las montañas de la Zona de los Santos, Quetzal Racing surgió en 2018 como una iniciativa de un grupo de ciclistas locales apasionados por los senderos de cafetales, bosques nubosos y ascensos exigentes de Santa María de Dota, Tarrazú y León Cortés.
           </p>
@@ -143,7 +148,7 @@
         <!-- stage dynamism -->
         <div class="route-content-grid">
           <div class="route-info">
-            <h2 id="stage-title" class="stage-title">ETAPA 1: El Juicio</h2>
+            <h2 id="stage-title" class="stage-title"><span>ETAPA 1</span>: El Juicio</h2>
             <p id="stage-desc" class="stage-desc">
               Es el valle dorado custodiado por la sombra imponente del Cerro Chirripó, la tierra donde nacen las leyendas y se forjan los verdaderos titanes del ciclismo. Partiendo desde el calor vibrante del Valle de El General, los ciclistas deberán abrirse paso hacia las faldas del coloso, enfrentando un terreno indomable de ríos caudalosos, piedras sueltas y ascensos interminables donde el clima cambia del fuego al hielo en cuestión de kilómetros. Cruzar este valle hacia las alturas es enfrentar el juicio final de la montaña, el escenario definitivo donde solo los más fuertes logran tocar el cielo.
             </p>
@@ -162,7 +167,7 @@
             <img
               id="stage-img"
               src="img/bike1.png"
-              alt="Ciclista en Etapa 1 Pérez Zeledón"
+              alt="bicileta"
             />
           </div>
         </div>
@@ -174,24 +179,43 @@
       <div class="container">
         <h2 class="section-title-center">GALERIA</h2>
 
+        <!-- gallery 1 -->
         <div class="gallery-grid">
           <div class="gallery-item">
-            <img src="assets/galeria-1.jpg" alt="Competidor Cannondale" />
+            <img src="img/gal3.jpg" alt="Competidor Cannondale" />
           </div>
+
+          <!-- gallery 2 -->
           <div class="gallery-item">
-            <img src="assets/galeria-2.jpg" alt="Descenso técnico MTB" />
+            <video controls poster="img/mtbvid1.mp4">
+              <source src="img/mtbvid1.mp4" type="video/mp4" />
+              Tu navegador no soporta la reproducción de video.
+            </video>
           </div>
+
+          <!-- gallery 3 -->
           <div class="gallery-item">
-            <img src="assets/galeria-3.jpg" alt="Pelotón en montaña" />
+            <video controls poster="img/mtbvideo.mp4">
+              <source src="img/mtbvideo.mp4" type="video/mp4" />
+              Tu navegador no soporta la reproducción de video.
+            </video>
           </div>
+          <!-- gallery 4 -->
           <div class="gallery-item">
-            <img src="assets/galeria-4.jpg" alt="Cruce de río dorsales 330 y 125" />
+            <img src="img/gal6.jpg" alt="Cruce de río dorsales 330 y 125" />
           </div>
+
+          <!-- gallery 5 -->
           <div class="gallery-item">
-            <img src="assets/galeria-5.jpg" alt="Sendero entre cafetales" />
+            <video controls poster="img/vid3.mp4">
+              <source src="img/vid3.mp4" type="video/mp4" />
+              Tu navegador no soporta la reproducción de video.
+            </video>/>
           </div>
+
+          <!-- gallery 6 -->
           <div class="gallery-item">
-            <img src="assets/galeria-6.jpg" alt="Cruce de quebrada en bosque" />
+            <img src="img/gal4.jpg" alt="Cruce de quebrada en bosque" />
           </div>
         </div>
       </div>
@@ -208,7 +232,7 @@
 
 
           <!-- Card 1 -->
-          <article class="place-card" style="background-image: url('assets/bokato.jpg');">
+          <article class="place-card" style="background-image: url(img/bokato.jpg);">
             <div class="place-overlay">
               <h3>BOKATO</h3>
               <p class="place-desc">La mejor opción para tomar un buen café.</p>
@@ -217,7 +241,7 @@
           </article>
 
           <!-- Card 2 -->
-          <article class="place-card" style="background-image: url('assets/palenque.jpg');">
+          <article class="place-card" style="background-image: url('img/palenque.jpg');">
             <div class="place-overlay">
               <h3>HOTEL PALENQUE TARRAZÚ</h3>
               <p class="place-desc">Los mejores paisajes y ambientes para pasar el rato.</p>
@@ -226,7 +250,7 @@
           </article>
 
           <!-- Card 3 -->
-          <article class="place-card" style="background-image: url('assets/kasa-blanca.jpg');">
+          <article class="place-card" style="background-image: url('img/kasa_blanka.png');">
             <div class="place-overlay">
               <h3>RESTAURANTE KASA BLANCA</h3>
               <p class="place-desc">Disfruta de una experiencia inolvidable.</p>
@@ -235,7 +259,7 @@
           </article>
 
           <!-- Card 4 -->
-          <article class="place-card" style="background-image: url('assets/dinopark.jpg');">
+          <article class="place-card" style="background-image: url('img/dinopark.jpg');">
             <div class="place-overlay">
               <h3>DINOPARK</h3>
               <p class="place-desc">Prepárate para momentos llenos de diversión.</p>
@@ -244,7 +268,7 @@
           </article>
 
           <!-- Card 5 -->
-          <article class="place-card" style="background-image: url('assets/el-coyote.jpg');">
+          <article class="place-card" style="background-image: url('img/cabanas.jpg');">
             <div class="place-overlay">
               <h3>CABAÑAS EL COYOTE</h3>
               <p class="place-desc">Comodidad y todo lo que necesitas para pasarla bien.</p>
@@ -253,7 +277,7 @@
           </article>
 
           <!-- Card 6 -->
-          <article class="place-card" style="background-image: url('assets/emilius-pizza.jpg');">
+          <article id="uwu" class="place-card" style="background-image: url('img/emilius.jpg');">
             <div class="place-overlay">
               <h3>EMILIUS PIZZA</h3>
               <p class="place-desc">La mejor pizza de la zona.</p>
@@ -262,25 +286,26 @@
           </article>
         </div>
       </div>
-    </section>
+    
 
       <!-- artists n' fan zone for da fellas -->
     <section class="fanzone-section">
       <div class="container">
         <h2 class="section-title-center">ARTISTAS INVITADOS</h2>
         <div class="artists-logos">
-          <img src="assets/logo-ajenos.png" alt="Los Ajenos" />
-          <img src="assets/logo-malpais.png" alt="Malpaís" />
+          <img src="img/losajenos.png" alt="Los Ajenos" />
+          <img src="img/malpais.png" alt="Malpaís" />
+          <img src="img/santoremedio.png" alt="">
         </div>
 
         <!-- brands fan zone -->
         <h2 class="section-title-center mt-large">MARCAS EN NUESTRA FAN ZONE</h2>
         <div class="brands-logos">
-          <img src="assets/logo-trek.png" alt="Trek" />
-          <img src="assets/logo-santo-remedio.png" alt="Santo Remedio" />
-          <img src="assets/logo-fox.png" alt="Fox Racing" />
-          <img src="assets/logo-perform.png" alt="Perform" />
-          <img src="assets/logo-gatorade.png" alt="Gatorade" />
+          <img src="img/trek.png" alt="Trek" />
+          <img src="img/spartan.png" alt="Santo Remedio" />
+          <img src="img/fox.png" alt="Fox Racing" />
+          <img src="img/gatorade.png" alt="Perform" />
+          <img src="img/perform.png" alt="Gatorade" />
         </div>
       </div>
     </section>
@@ -293,6 +318,7 @@
           <img src="assets/jersey-quetzal.png" alt="Jersey Oficial Quetzal Racing" />
         </div>
       </div>
+      </section>
     </section>
 
       <!-- events -->
@@ -301,39 +327,7 @@
         <h2 class="section-title-center">PRÓXIMOS EVENTOS</h2>
 
         <div class="event-poster">
-          <div class="poster-top">
-            <img src="assets/logo-quetzal-blanco.png" alt="Quetzal Racing" class="poster-logo" />
-            <p class="poster-motto">“Donde la ruta hace tus sueños realidad”</p>
-          </div>
-
-          <!-- poster -->
-          <div class="poster-main">
-            <span class="poster-tag">EDICIÓN</span>
-            <h3 class="poster-location">LOS SANTOS</h3>
-            <p class="poster-date">19-21 DE NOVIEMBRE</p>
-
-            <div class="poster-details-row">
-              <div class="poster-time">5<span>AM</span></div>
-              <div class="poster-route">
-                <strong>VALLE DE EL GENERAL, PEREZ ZELEDON</strong>
-                <span>RUMBO A LA ZONA DE LOS SANTOS</span>
-              </div>
-            </div>
-
-            <div class="poster-categories">
-              <p><strong>CATEGORIAS:</strong> ELITE, MASTER, OPEN</p>
-              <p><strong>MODALIDADES:</strong> XC / ENDURO</p>
-            </div>
-          </div>
-
-          <div class="poster-footer">
-            <div class="poster-price">$430</div>
-            <div class="poster-cta-info">
-              <span class="badge-open">INSCRIPCIONES ABIERTAS / INCLUYE KIT COMPLETO</span>
-              <p>Kit, medalla, póliza, e hidratación.</p>
-            </div>
-          </div>
-        </div>
+          <img src="img/flyer.jpg" alt="">
       </div>
     </section>
 
@@ -492,7 +486,7 @@
       <!-- Logo -->
       <div class="footer-brand">
         <a href="#inicio" aria-label="Quetzal Racing Inicio">
-          <img src="assets/logo-quetzal-blanco.png" alt="Logo Quetzal Racing" />
+          <img src="img/logoquetzalracing_white.png" alt="Logo Quetzal Racing" />
         </a>
       </div>
 
