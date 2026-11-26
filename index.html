@@ -9,29 +9,28 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-  <!-- googlefonts -->
+  <!-- fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
     href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@400;500;600;700;800&family=Oswald:wght@500;700&display=swap"
-    rel="stylesheet"/>
-    <link href="https://fonts.cdnfonts.com/css/metropolitan" rel="stylesheet">
+    rel="stylesheet" />
+  <link href="https://fonts.cdnfonts.com/css/metropolitan" rel="stylesheet" />
   <!-- css link -->
-  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
-      <!-- navbar (nav) -->
+  <!-- hero -->
   <header id="inicio" class="hero">
     <div class="hero-overlay"></div>
 
-    <!-- Navegación -->
     <nav class="navbar_container">
       <a href="#inicio" class="brand-logo" aria-label="Quetzal Racing Inicio">
         <img src="img/logoquetzalracing_white.png" alt="Logo Quetzal Racing" />
       </a>
 
-      <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+      <button type="button" class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
         <span></span>
         <span></span>
         <span></span>
@@ -47,7 +46,6 @@
       </ul>
     </nav>
 
-    <!-- hero content-->
     <div class="hero-content_container">
       <div class="hero-text-box">
         <h1 class="hero-title">
@@ -65,13 +63,15 @@
   </header>
 
   <main>
-      <!-- carrousel -->
+    <!-- carousel about box -->
     <section id="sobre-nosotros" class="about-section">
       <div class="container about-grid">
-        <!-- Carrousel 3D-->
         <div class="about-carousel">
-          <button class="carousel-btn prev" id="prevSlide" aria-label="Anterior"><i class="fa-solid fa-arrow-left-long"></i></button>
+          <button type="button" class="carousel-btn prev" id="prevSlide" aria-label="Anterior">
+            <i class="fa-solid fa-arrow-left-long"></i>
+          </button>
 
+          <!-- carousel about -->
           <div class="carousel-track">
             <div class="carousel-card side-left">
               <img src="img/img2card.jpg" alt="Ciclista en sendero" />
@@ -84,10 +84,12 @@
             </div>
           </div>
 
-          <button class="carousel-btn next" id="nextSlide" aria-label="Siguiente"><i class="fa-solid fa-arrow-right"></i></button>
+          <button type="button" class="carousel-btn next" id="nextSlide" aria-label="Siguiente">
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
         </div>
 
-        <!-- Text "Nuestra Esencia"" -->
+        <!-- about title -->
         <div class="about-text">
           <span class="eyebrow">NUESTRA ESCENCIA</span>
           <h2 class="section-title-left">UN POCO DE <span>QUETZAL</span> RACING</h2>
@@ -104,7 +106,7 @@
       </div>
     </section>
 
-    <!-- separador -->
+    <!-- challenge collage  -->
     <section class="challenge-section">
       <div class="container">
         <h2 class="section-title-center">
@@ -132,60 +134,102 @@
     <!-- route -->
     <section id="la-ruta" class="route-section">
       <div class="container">
-        <!-- stages selector -->
+        <!-- Stage Navigation Tabs -->
         <div class="route-tabs" role="tablist">
-          <button class="route-tab active" data-stage="0" role="tab" aria-selected="true">
+          <button type="button" class="route-tab active" data-stage="0" role="tab" aria-selected="true">
             PEREZ ZELEDON
           </button>
-          <button class="route-tab" data-stage="1" role="tab" aria-selected="false">
+          <button type="button" class="route-tab" data-stage="1" role="tab" aria-selected="false">
             DOTA
           </button>
-          <button class="route-tab" data-stage="2" role="tab" aria-selected="false">
+          <button type="button" class="route-tab" data-stage="2" role="tab" aria-selected="false">
             TARRAZU
           </button>
         </div>
 
-        <!-- stage dynamism -->
-        <div class="route-content-grid">
+        <!-- stage 1 -->
+        <div class="route-content-grid stage-panel active" data-stage-panel="0" role="tabpanel">
           <div class="route-info">
-            <h2 id="stage-title" class="stage-title"><span>ETAPA 1</span>: El Juicio</h2>
-            <p id="stage-desc" class="stage-desc">
+            <h2 class="stage-title"><span>ETAPA 1</span>: El Juicio</h2>
+            <p class="stage-desc">
               Es el valle dorado custodiado por la sombra imponente del Cerro Chirripó, la tierra donde nacen las leyendas y se forjan los verdaderos titanes del ciclismo. Partiendo desde el calor vibrante del Valle de El General, los ciclistas deberán abrirse paso hacia las faldas del coloso, enfrentando un terreno indomable de ríos caudalosos, piedras sueltas y ascensos interminables donde el clima cambia del fuego al hielo en cuestión de kilómetros. Cruzar este valle hacia las alturas es enfrentar el juicio final de la montaña, el escenario definitivo donde solo los más fuertes logran tocar el cielo.
             </p>
 
             <ul class="stage-specs">
-              <li><strong>Distancia:</strong> <span id="stage-distance">105 km (Desnivel positivo: +3,850 m)</span></li>
-              <li><strong>Lugar de salida:</strong> <span id="stage-start">San Gerardo de Rivas (Base del Chirripó)</span></li>
-              <li><strong>Lugar de llegada:</strong> <span id="stage-end">Parque Central de San Isidro de El General</span></li>
-              <li><strong>HORA:</strong> <span id="stage-time">5:00 AM</span></li>
+              <li><strong>Distancia:</strong> 105 km (Desnivel positivo: +3,850 m)</li>
+              <li><strong>Lugar de salida:</strong> San Gerardo de Rivas (Base del Chirripó)</li>
+              <li><strong>Lugar de llegada:</strong> Parque Central de San Isidro de El General</li>
+              <li><strong>HORA:</strong> 5:00 AM</li>
             </ul>
 
-            <a href="#" id="stage-gpx" class="btn btn-primary">DESCARGAR RUTA</a>
+            <a href="assets/etapa1.gpx" class="btn btn-primary" download>DESCARGAR RUTA</a>
           </div>
 
           <div class="route-media">
-            <img
-              id="stage-img"
-              src="img/bike1.png"
-              alt="bicileta"
-            />
+            <img src="img/bike1.png" alt="Bicicleta Etapa 1 Pérez Zeledón" />
+          </div>
+        </div>
+
+        <!-- stage 2 -->
+        <div class="route-content-grid stage-panel" data-stage-panel="1" role="tabpanel">
+          <div class="route-info">
+            <h2 class="stage-title"><span>ETAPA 2</span>: La Conquista del Reino del Quetzal</h2>
+            <p class="stage-desc">
+              Es un suspiro frío en las alturas, un reino místico de bosques nubosos y robles centenarios donde el tiempo parece haberse detenido. Sus senderos técnicos y escaladas implacables atraviesan el hogar del quetzal, exigiendo no solo piernas de acero, sino un espíritu inquebrantable frente al viento helado y la altura. Pedalar por Dota es sumergirse en la naturaleza más salvaje y poética del país, donde cada curva revela un paisaje que quita el aliento, literalmente.
+            </p>
+
+            <ul class="stage-specs">
+              <li><strong>Distancia:</strong> 75 km (Desnivel positivo: +3,400 m)</li>
+              <li><strong>Lugar de salida:</strong> Plaza de Deportes de Santa María de Dota</li>
+              <li><strong>Lugar de llegada:</strong> Providencia de Dota (Sector El Brujo)</li>
+              <li><strong>HORA:</strong> 5:00 AM</li>
+            </ul>
+
+            <a href="assets/etapa2.gpx" class="btn btn-primary" download>DESCARGAR RUTA</a>
+          </div>
+
+          <div class="route-media">
+            <img src="img/bike1.png" alt="Bicicleta Etapa 2 Dota" />
+          </div>
+        </div>
+
+        <!-- stage 3  -->
+        <div class="route-content-grid stage-panel" data-stage-panel="2" role="tabpanel">
+          <div class="route-info">
+            <h2 class="stage-title"><span>ETAPA 3</span>: El Despertar entre Cafetales</h2>
+            <p class="stage-desc">
+              Es el santuario donde la montaña abraza las nubes y el aroma del café más fino del mundo despierta el alma de los valientes. Sus caminos son un laberinto esmeralda de pendientes infinitas que ponen a prueba el corazón desde la primera pedalada. Aquí, el silencio de los valles profundos solo se rompe por el rugido de las llantas sobre el lastre, recordándole a cada ciclista que en esta tierra la gloria se gana gota a gota, entre la neblina matinal y el esfuerzo puro.
+            </p>
+
+            <ul class="stage-specs">
+              <li><strong>Distancia:</strong> 82 km (Desnivel positivo: +3,100 m)</li>
+              <li><strong>Lugar de salida:</strong> Parque Central de San Marcos de Tarrazú</li>
+              <li><strong>Lugar de llegada:</strong> Mirador Cerro La Cruz, San Lorenzo</li>
+              <li><strong>HORA:</strong> 5:00 AM</li>
+            </ul>
+
+            <a href="assets/etapa3.gpx class="btn btn-primary" download>DESCARGAR RUTA</a>
+          </div>
+
+          <div class="route-media">
+            <img src="img/bike1.png" alt="Bicicleta Etapa 3 Tarrazú" />
           </div>
         </div>
       </div>
     </section>
 
-      <!-- gallery -->
+    <!-- gallery section -->
     <section id="galeria" class="gallery-section">
       <div class="container">
         <h2 class="section-title-center">GALERIA</h2>
 
-        <!-- gallery 1 -->
+        <!-- gallery grid (collage) -->
         <div class="gallery-grid">
           <div class="gallery-item">
             <img src="img/gal3.jpg" alt="Competidor Cannondale" />
           </div>
 
-          <!-- gallery 2 -->
+          <!-- gallery 1 -->
           <div class="gallery-item">
             <video controls poster="img/mtbvid1.mp4">
               <source src="img/mtbvid1.mp4" type="video/mp4" />
@@ -193,27 +237,28 @@
             </video>
           </div>
 
-          <!-- gallery 3 -->
+                    <!-- gallery 2 -->
           <div class="gallery-item">
             <video controls poster="img/mtbvideo.mp4">
               <source src="img/mtbvideo.mp4" type="video/mp4" />
               Tu navegador no soporta la reproducción de video.
             </video>
           </div>
-          <!-- gallery 4 -->
+
+          <!-- gallery 3 -->
           <div class="gallery-item">
             <img src="img/gal6.jpg" alt="Cruce de río dorsales 330 y 125" />
           </div>
 
-          <!-- gallery 5 -->
+          <!-- gallery 4 -->
           <div class="gallery-item">
             <video controls poster="img/vid3.mp4">
               <source src="img/vid3.mp4" type="video/mp4" />
               Tu navegador no soporta la reproducción de video.
-            </video>/>
+            </video>
           </div>
 
-          <!-- gallery 6 -->
+          <!-- gallery 5 -->
           <div class="gallery-item">
             <img src="img/gal4.jpg" alt="Cruce de quebrada en bosque" />
           </div>
@@ -221,18 +266,17 @@
       </div>
     </section>
 
-      <!-- experience -->
+    <!-- experience -->
     <section id="experiencia" class="experience-section">
       <div class="container">
         <header class="section-header-center">
           <h2 class="section-title-center">NUESTRAS MEJORES OPCIONES</h2>
           <p class="section-subtitle">PERFECTAS PARA TI</p>
         </header>
+
         <div class="places-grid">
-
-
-          <!-- Card 1 -->
-          <article class="place-card" style="background-image: url(img/bokato.jpg);">
+          <!-- card 1 -->
+          <article class="place-card place-bokato">
             <div class="place-overlay">
               <h3>BOKATO</h3>
               <p class="place-desc">La mejor opción para tomar un buen café.</p>
@@ -240,8 +284,8 @@
             </div>
           </article>
 
-          <!-- Card 2 -->
-          <article class="place-card" style="background-image: url('img/palenque.jpg');">
+          <!-- card 2 -->
+          <article class="place-card place-palenque">
             <div class="place-overlay">
               <h3>HOTEL PALENQUE TARRAZÚ</h3>
               <p class="place-desc">Los mejores paisajes y ambientes para pasar el rato.</p>
@@ -249,8 +293,8 @@
             </div>
           </article>
 
-          <!-- Card 3 -->
-          <article class="place-card" style="background-image: url('img/kasa_blanka.png');">
+          <!-- card 3 -->
+          <article class="place-card place-kasablanka">
             <div class="place-overlay">
               <h3>RESTAURANTE KASA BLANCA</h3>
               <p class="place-desc">Disfruta de una experiencia inolvidable.</p>
@@ -258,8 +302,8 @@
             </div>
           </article>
 
-          <!-- Card 4 -->
-          <article class="place-card" style="background-image: url('img/dinopark.jpg');">
+          <!-- card 4 -->
+          <article class="place-card place-dinopark">
             <div class="place-overlay">
               <h3>DINOPARK</h3>
               <p class="place-desc">Prepárate para momentos llenos de diversión.</p>
@@ -267,8 +311,8 @@
             </div>
           </article>
 
-          <!-- Card 5 -->
-          <article class="place-card" style="background-image: url('img/cabanas.jpg');">
+          <!-- card 5 -->
+          <article class="place-card place-coyote">
             <div class="place-overlay">
               <h3>CABAÑAS EL COYOTE</h3>
               <p class="place-desc">Comodidad y todo lo que necesitas para pasarla bien.</p>
@@ -276,8 +320,8 @@
             </div>
           </article>
 
-          <!-- Card 6 -->
-          <article id="uwu" class="place-card" style="background-image: url('img/emilius.jpg');">
+          <!-- card 6 -->
+          <article class="place-card place-emilius">
             <div class="place-overlay">
               <h3>EMILIUS PIZZA</h3>
               <p class="place-desc">La mejor pizza de la zona.</p>
@@ -286,59 +330,59 @@
           </article>
         </div>
       </div>
-    
 
-      <!-- artists n' fan zone for da fellas -->
-    <section class="fanzone-section">
-      <div class="container">
-        <h2 class="section-title-center">ARTISTAS INVITADOS</h2>
-        <div class="artists-logos">
-          <img src="img/losajenos.png" alt="Los Ajenos" />
-          <img src="img/malpais.png" alt="Malpaís" />
-          <img src="img/santoremedio.png" alt="">
-        </div>
+      <!-- artists n fan zone -->
+      <div class="fanzone-section">
+        <div class="container">
+          <h2 class="section-title-center">ARTISTAS INVITADOS</h2>
+          <div class="artists-logos">
+            <img src="img/losajenos.png" alt="Los Ajenos" />
+            <img src="img/malpais.png" alt="Malpaís" />
+            <img src="img/santoremedio.png" alt="Santo Remedio" />
+          </div>
 
-        <!-- brands fan zone -->
-        <h2 class="section-title-center mt-large">MARCAS EN NUESTRA FAN ZONE</h2>
-        <div class="brands-logos">
-          <img src="img/trek.png" alt="Trek" />
-          <img src="img/spartan.png" alt="Santo Remedio" />
-          <img src="img/fox.png" alt="Fox Racing" />
-          <img src="img/gatorade.png" alt="Perform" />
-          <img src="img/perform.png" alt="Gatorade" />
+          <h2 class="section-title-center mt-large">MARCAS EN NUESTRA FAN ZONE</h2>
+          <div class="brands-logos">
+            <img src="img/trek.png" alt="Trek" />
+            <img src="img/spartan.png" alt="Spartan" />
+            <img src="img/fox.png" alt="Fox Racing" />
+            <img src="img/gatorade.png" alt="Gatorade" />
+            <img src="img/perform.png" alt="Perform" />
+          </div>
         </div>
       </div>
-    </section>
 
       <!-- jersey -->
-    <section class="jersey-section">
-      <div class="container jersey-wrapper">
-        <h2 class="section-title-center">NUESTRO JERSEY</h2>
-        <div class="jersey-showcase">
-          <img src="assets/jersey-quetzal.png" alt="Jersey Oficial Quetzal Racing" />
+      <div class="jersey-section">
+        <div class="container jersey-wrapper">
+          <h2 class="section-title-center">NUESTRO JERSEY</h2>
+          <div class="jersey-showcase">
+            <video controls poster="img/jerseyvid.mp4">
+              <source src="img/jerseyvid.mp4" type="video/mp4" />
+          </div>
         </div>
       </div>
-      </section>
     </section>
 
-      <!-- events -->
+    <!-- events -->
     <section id="eventos" class="events-section">
       <div class="container">
         <h2 class="section-title-center">PRÓXIMOS EVENTOS</h2>
 
         <div class="event-poster">
-          <img src="img/flyer.jpg" alt="">
+          <img src="img/flyer.jpg" alt="Flyer oficial Quetzal Racing 19-21 de Noviembre" />
+        </div>
       </div>
     </section>
 
-      <!-- faq -->
+    <!-- faq accordion -->
     <section class="faq-section">
       <div class="container faq-container">
         <h2 class="section-title-center">FAQ</h2>
 
         <div class="faq-list">
           <div class="faq-item">
-            <button class="faq-question">
+            <button type="button" class="faq-question">
               <span>¿Hasta cuándo tengo tiempo para inscribirme?</span>
               <span class="faq-icon">+</span>
             </button>
@@ -347,9 +391,8 @@
             </div>
           </div>
 
-          <!-- faq question -->
           <div class="faq-item">
-            <button class="faq-question">
+            <button type="button" class="faq-question">
               <span>¿Qué incluye el costo de mi inscripción?</span>
               <span class="faq-icon">+</span>
             </button>
@@ -359,7 +402,7 @@
           </div>
 
           <div class="faq-item">
-            <button class="faq-question">
+            <button type="button" class="faq-question">
               <span>¿Qué tipo de bicicleta está permitida?</span>
               <span class="faq-icon">+</span>
             </button>
@@ -369,7 +412,7 @@
           </div>
 
           <div class="faq-item">
-            <button class="faq-question">
+            <button type="button" class="faq-question">
               <span>¿Se permiten bicicletas eléctricas (E-Bikes)?</span>
               <span class="faq-icon">+</span>
             </button>
@@ -379,7 +422,7 @@
           </div>
 
           <div class="faq-item">
-            <button class="faq-question">
+            <button type="button" class="faq-question">
               <span>¿Cuándo y dónde se entregan los kits de corredor?</span>
               <span class="faq-icon">+</span>
             </button>
@@ -389,7 +432,7 @@
           </div>
 
           <div class="faq-item">
-            <button class="faq-question">
+            <button type="button" class="faq-question">
               <span>¿Dónde puedo descargar la ruta o el archivo GPX?</span>
               <span class="faq-icon">+</span>
             </button>
@@ -399,7 +442,7 @@
           </div>
 
           <div class="faq-item">
-            <button class="faq-question">
+            <button type="button" class="faq-question">
               <span>¿Habrá estacionamiento y guardarropa en la zona de salida?</span>
               <span class="faq-icon">+</span>
             </button>
@@ -411,7 +454,7 @@
       </div>
     </section>
 
-      <!-- form -->
+    <!-- registration form -->
     <section id="inscripcion" class="register-section">
       <div class="container register-container">
         <header class="section-header-center">
@@ -421,26 +464,32 @@
 
         <form class="register-form" action="#" method="POST" enctype="multipart/form-data">
           <div class="form-grid">
+
+            <!-- name box -->
             <div class="form-group">
               <label for="nombre">Nombre</label>
               <input type="text" id="nombre" name="nombre" required />
             </div>
 
+            <!-- last name box -->
             <div class="form-group">
               <label for="apellido">Apellido</label>
               <input type="text" id="apellido" name="apellido" required />
             </div>
 
+            <!-- phone number box -->
             <div class="form-group">
               <label for="telefono">Número telefónico</label>
               <input type="tel" id="telefono" name="telefono" required />
             </div>
 
+            <!-- email box -->
             <div class="form-group">
               <label for="correo">Correo electrónico</label>
               <input type="email" id="correo" name="correo" required />
             </div>
 
+            <!-- mode box -->
             <div class="form-group">
               <label for="modalidad">Modalidad</label>
               <select id="modalidad" name="modalidad" required>
@@ -451,6 +500,7 @@
               </select>
             </div>
 
+            <!-- size box -->
             <div class="form-group">
               <label for="talla">Talla</label>
               <select id="talla" name="talla" required>
@@ -464,6 +514,7 @@
             </div>
           </div>
 
+          <!-- payment method box -->
           <div class="form-group-center">
             <label for="comprobante">Comprobante pago</label>
             <div class="file-input-wrapper">
@@ -472,6 +523,7 @@
             </div>
           </div>
 
+          <!-- submit button -->
           <div class="form-submit">
             <button type="submit" class="btn btn-primary btn-submit">INSCRIBIRSE</button>
           </div>
@@ -480,17 +532,15 @@
     </section>
   </main>
 
-      <!-- footer -->
+  <!-- footer n map -->
   <footer class="site-footer">
     <div class="container footer-top">
-      <!-- Logo -->
       <div class="footer-brand">
         <a href="#inicio" aria-label="Quetzal Racing Inicio">
           <img src="img/logoquetzalracing_white.png" alt="Logo Quetzal Racing" />
         </a>
       </div>
 
-      <!-- nav footer -->
       <nav class="footer-nav" aria-label="Navegación del pie de página">
         <ul class="footer-col">
           <li><a href="#inicio">INICIO</a></li>
@@ -504,7 +554,6 @@
         </ul>
       </nav>
 
-      <!-- map-->
       <div class="footer-map">
         <iframe
           title="Ubicación Quetzal Racing - Zona de los Santos"
@@ -515,7 +564,6 @@
       </div>
     </div>
 
-    <!-- footer bottom -->
     <div class="footer-bottom">
       <div class="container">
         <p>© 2026 Quetzal Racing. Creado por Emily Calvo Godínez. Imágenes de Freepik, LaRutaMTB, Pinterest, Pexels.</p>
@@ -523,7 +571,7 @@
     </div>
   </footer>
 
-  <!-- script link (js) -->
+  <!-- Main JavaScript -->
   <script src="script.js"></script>
 </body>
 </html>
